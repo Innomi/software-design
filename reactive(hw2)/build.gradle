@@ -1,0 +1,21 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.mongodb', name: 'mongodb-driver-rx', version: '1.5.0'
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.17'
+    compile group: 'io.reactivex', name: 'rxnetty-http', version: '0.5.3'
+    compile group: 'io.reactivex', name: 'rxnetty-common', version: '0.5.3'
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.45.Final'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.6.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.6.2'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
